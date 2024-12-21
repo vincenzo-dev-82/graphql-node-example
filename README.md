@@ -10,6 +10,31 @@ git remote add origin git@github.com:vincenzo-dev-82/graphql-node-example.git
 git push -u origin main
 ```
 
+
+## 기본 구조
+```
+graphql-node-example/
+├── node_modules/
+├── src/
+│   ├── server/
+│   │   ├── resolvers/
+│   │   │   └── helloResolver.js
+│   │   ├── schemas/
+│   │   │   └── schema.js
+│   │   └── index.js
+│   ├── client/
+│   │   ├── react/
+│   │   │   └── apollo-client-react.js
+│   │   └── basic/
+│   │       └── apollo-client-basic.js
+│   └── utils/
+│       └── logger.js
+├── .gitignore
+├── package.json
+├── README.md
+
+```
+
 ## Node 확인하기
 ``` bash
 # node 버전 확인하기
@@ -49,8 +74,8 @@ npm install apollo-server @apollo/client cross-fetch
 3. 파일 생성
 ``` 
 프로젝트 루트 디렉토리에 두 개의 파일을 생성합니다.
-apollo-server.js
-apollo-client.js
+src/server/index.js
+src/client/basic/apollo-client.js
 ```
 
 5. 코드 작성
@@ -71,6 +96,10 @@ node apollo-server.js
 ``` bash
 # 새로운 터미널에서 아래 명령어를 실행하여 클라이언트가 서버에 요청을 보냅니다
 # http://localhost:4000에서 서버가 실행됩니다.
-node apollo-client.js
-node apollo-client-react.js
-``` 
+
+# basic-client
+node src/client/basic/apollo-client.js
+
+# react-client
+node src/client/react/apollo-client-react.js
+```
