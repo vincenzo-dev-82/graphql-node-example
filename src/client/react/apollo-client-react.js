@@ -1,7 +1,6 @@
-// **apollo-client.js** (GraphQL Client)
-const { ApolloClient, InMemoryCache, gql } = require('@apollo/client/core');
-const { HttpLink } = require('@apollo/client');
-const fetch = require('cross-fetch');
+import pkg from '@apollo/client';
+const { ApolloClient, InMemoryCache, HttpLink, gql } = pkg;
+import fetch from 'cross-fetch';
 
 // Create the Apollo Client instance
 const client = new ApolloClient({

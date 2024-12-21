@@ -2,12 +2,12 @@
   "name": "graphql-node-example",
   "version": "1.0.0",
   "description": "``` echo \"# graphql-node-example\" >> README.md git init git add README.md git commit -m \"first commit\" git branch -M main git remote add origin git@github.com:vincenzo-dev-82/graphql-node-example.git git push -u origin main ```",
-  "main": "index.js",
+  "main": "src/server/index.js",
   "type": "module",
   "scripts": {
-    "start-server": "node apollo-server.js",
-    "start-client-react": "node apollo-client-react.js",
-    "start-client-basic": "node apollo-client.js"
+    "start-server": "node src/server/index.js",
+    "start-client-react": "node src/client/react/apollo-client-react.js",
+    "start-client": "node src/client/basic/apollo-client.js"
   },
   "keywords": [],
   "author": "",
