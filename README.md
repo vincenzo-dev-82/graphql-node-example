@@ -48,21 +48,21 @@ npm install apollo-server @apollo/client cross-fetch
 
 3. 파일 생성
 ``` 
-프로젝트 루트 디렉토리에 두 개의 파일을 생성합니다:
+프로젝트 루트 디렉토리에 두 개의 파일을 생성합니다.
 apollo-server.js
 apollo-client.js
 ```
 
 5. 코드 작성
 ``` 
-이전에 제공한 Apollo Server 및 Apollo Client 코드를 각각의 파일에 복사합니다.
+Apollo Server 및 Apollo Client 코드를 각각의 파일에 구현합니다.
 ``` 
 
 ## 프로젝트 실행
 
 1. 프로젝트 서버 실행
 ``` bash
-# 터미널에서 아래 명령어를 실행하여 GraphQL 서버를 시작합니다
+# 터미널에서 아래 명령어를 실행하여 GraphQL 서버를 시작합니다.
 # http://localhost:4000에서 서버가 실행됩니다.
 node apollo-server.js
 ``` 
@@ -72,4 +72,5 @@ node apollo-server.js
 # 새로운 터미널에서 아래 명령어를 실행하여 클라이언트가 서버에 요청을 보냅니다
 # http://localhost:4000에서 서버가 실행됩니다.
 node apollo-client.js
+node apollo-client-react.js
 ``` 
